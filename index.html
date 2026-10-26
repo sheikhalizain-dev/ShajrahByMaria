@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Shajra by Maria: handwoven textiles made in Pakistan from natural fibres, with traditional craftsmanship. Launching soon.">
+<meta name="theme-color" content="#2b211b">
+<title>Shajra by Maria</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=EB+Garamond:ital,wght@1,400;1,500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nb" href="#top" aria-label="Shajra, back to top"><img src="img/logo.jpg" alt="Shajra"></a>
+  <nav class="nl" aria-label="Sections"><a href="#collection">Collection</a><a href="#soon">Launch</a><a href="#loom">Loom</a><a href="#cloth">Cloth</a><a href="#hands">Hands</a><a href="#journal">Journal</a></nav>
+  <a class="nc" href="#contact">Contact</a>
+  <button class="nm" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
+<div class="menu" id="menu" hidden>
+  <button type="button" id="menuClose">Close</button>
+  <a href="#collection">Collection</a><a href="#soon">Launch</a><a href="#loom">Loom</a><a href="#cloth">Cloth</a><a href="#hands">Hands</a><a href="#crossword">Play</a><a href="#journal">Journal</a><a href="#contact">Contact</a>
+</div>
+
+<main>
+<section class="hero" id="top">
+  <canvas data-cloth="img/p01.jpg" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <div class="toprow">
+      <img class="seal" src="img/logo.jpg" alt="Shajra logo: a tree with visible roots">
+      <a class="soon" href="#soon"><i></i>Launching soon</a>
+    </div>
+    <h1 class="dsp hl"><span class="vh">Shajra by Maria: </span><span class="l1">Thread.</span><span class="l2"><span class="sw">T</span>exture.</span><span class="l3">Craft.</span></h1>
+    <div class="hbot">
+      <p>Handwoven in Pakistan from natural fibres, with traditional craftsmanship and sustainable care.</p>
+      <a class="lk" href="#collection">View the collection <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <div class="about">
+    <div class="tx">
+      <span class="eb">About Shajra</span>
+      <h2 class="dsp"><span class="sw">R</span>ooted in craft</h2>
+      <p>Shajra by Maria is a handwoven textile label made in Pakistan. Every piece begins as natural fibre, from cotton and linen to banana fibre, jute and grass, and is worked by hand using traditional craftsmanship and sustainable practices.</p>
+      <a class="lk" href="#approach">Learn more <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a>
+    </div>
+    <div class="collage">
+      <div class="a"><img src="img/p09.jpg" alt="A wooden weaving shuttle holding a bobbin of undyed thread" loading="lazy"></div>
+      <div class="b"><img src="img/p07.jpg" alt="A cone of undyed yarn with a loose loop of thread" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark ap" id="approach">
+  <div class="apbg" id="apA"></div><div class="apbg" id="apB"></div>
+  <div class="ap-in">
+    <div class="center"><span class="eb w">The hands behind every piece</span><h2 class="dsp"><span class="sw">F</span>ibre to form</h2></div>
+    <div class="apmain">
+      <button class="side l" id="apPrev" type="button">← Previous</button>
+      <article class="apc" aria-live="polite">
+        <span class="n" id="apN"></span>
+        <div class="im"><img id="apImg" alt=""></div>
+        <h3 id="apT"></h3>
+        <p id="apP"></p>
+      </article>
+      <button class="side r" id="apNext" type="button">Next →</button>
+    </div>
+    <div class="dots" id="apDots" role="group" aria-label="Choose a step"></div>
+  </div>
+</section>
+
+<section class="sec" id="collection">
+  <div class="col-wrap">
+    <div class="center"><span class="eb">First collection</span><h2 class="dsp"><span class="sw">S</span>even pieces, made by hand</h2><p style="max-width:54ch;color:var(--ink2)">Handwoven and block-printed home textiles in natural fibres. Choose a piece to see its size, materials and price.</p></div>
+    <div class="pd">
+      <div class="pimg"><div class="ph"><b id="phN"></b><span>Photograph coming soon</span></div><img id="pImg" alt="" hidden><div class="thumbs" id="pThumbs"></div></div>
+      <div class="pr">
+        <div class="meta"><span>First collection</span><span id="pCount"></span></div>
+        <div class="pbody" id="pBody">
+          <h3 class="dsp pname" id="pName"></h3>
+          <span class="ptype" id="pType"></span>
+          <p class="price" id="pPrice"></p>
+          <dl class="spec" id="pSpec"></dl>
+          <p class="pdesc" id="pDesc"></p>
+          <div class="cust" id="pCust" hidden><b>Customisation</b><span id="pCustT"></span></div>
+        </div>
+        <div class="psb">
+          <div class="enq"><a class="bt" id="enq" href="https://ig.me/m/shajrabymaria" target="_blank" rel="noopener">Enquire on Instagram <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a><span class="enq-note" id="enqNote" aria-live="polite"></span></div>
+          <div class="arrows"><button class="cir" id="pdPrev" type="button" aria-label="Previous product"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 6H1M5 1L1 6l4 5"/></svg></button><button class="cir" id="pdNext" type="button" aria-label="Next product"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h19M15 1l4 5-4 5"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+    <div class="pl" id="pList" role="list" aria-label="All products"></div>
+    <p class="mats"><span>Made with</span> Cotton · Linen · Banana fibre · Jute · Grass fibre · Naturally dyed yarn</p>
+  </div>
+</section>
+
+<section class="dark cl sec" id="cloth">
+  <div class="bgimg" aria-hidden="true"></div>
+  <div class="cl-in">
+    <div class="cl-l">
+      <span class="eb w">Cloth</span>
+      <h2 class="dsp"><span class="sw">N</span>eutrals are never just neutral</h2>
+      <p>There's more than one way to do neutral.</p>
+      <a class="lk" href="#contact">Get in touch <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a>
+    </div>
+    <div class="cl-g" id="clg"></div>
+  </div>
+</section>
+
+<section class="sec" id="soon">
+  <div class="ps-wrap">
+    <div class="center"><span class="eb">Launching soon</span><h2 class="dsp">Shajra is almost <span class="sw">H</span>ere</h2></div>
+    <div class="ps">
+      <div class="ps-img"><img id="psImg" alt=""></div>
+      <div class="ps-r">
+        <div class="meta"><span id="psDate"></span><span id="psN"></span></div>
+        <div class="mid">
+          <div class="t"><h3 id="psT"></h3><p id="psP"></p></div>
+          <div class="nx"><div class="im"><img id="psNx" alt=""></div><span id="psNc"></span></div>
+        </div>
+        <div class="psb">
+          <a class="lk" id="psLink" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open on Instagram <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a>
+          <div class="arrows"><button class="cir" id="psPrev" type="button" aria-label="Earlier teaser"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 6H1M5 1L1 6l4 5"/></svg></button><button class="cir" id="psNext" type="button" aria-label="Later teaser"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h19M15 1l4 5-4 5"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="loom">
+  <div class="loom" style="margin-bottom:clamp(28px,4vw,52px);display:block"><div class="center" style="justify-items:start;text-align:left"><span class="eb">Try it</span><h2 class="dsp">Sit at the <span class="sw">L</span>oom</h2><p style="max-width:52ch;color:var(--ink2)">Pick a weave structure and two yarns. The warp runs top to bottom, the weft crosses it, and the order they pass over each other is the whole pattern.</p></div></div>
+  <div class="loom">
+    <div>
+      <div class="loom-frame"><canvas id="loomCanvas" role="img" aria-label="A woven swatch drawn from your chosen weave and yarns"></canvas></div>
+      <p class="loom-cap" id="loomCap" aria-live="polite"></p>
+    </div>
+    <div class="controls">
+      <div class="ctl"><span class="eb" id="lWeave">Weave</span><div class="seg" id="weaves" role="group" aria-labelledby="lWeave"></div></div>
+      <div class="ctl"><span class="eb" id="lWeft">Weft yarn</span><div class="yarns" id="weft" role="group" aria-labelledby="lWeft"></div></div>
+      <div class="ctl"><span class="eb" id="lWarp">Warp yarn</span><div class="yarns" id="warp" role="group" aria-labelledby="lWarp"></div></div>
+      <div><button class="bt" id="again" type="button">Weave it again</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark sec" id="motion">
+  <div class="line-h"><span class="eb w">In motion</span><h2 class="dsp">Cloth on the <span class="sw">L</span>ine</h2></div>
+  <div class="line">
+    <canvas data-hang="img/p01.jpg" role="img" aria-label="Ribbed sand-coloured cloth hanging and swaying"></canvas>
+    <canvas data-hang="img/p04.jpg" role="img" aria-label="Diamond-patterned cloth hanging and swaying"></canvas>
+    <canvas data-hang="img/p03.jpg" role="img" aria-label="Plain-weave cloth hanging and swaying"></canvas>
+  </div>
+  <div class="reels" id="reels" hidden></div>
+  <div class="line-h"><a class="lk" style="width:min(300px,100%)" href="https://www.instagram.com/shajrabymaria/reels/" target="_blank" rel="noopener">Watch the reels <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a></div>
+</section>
+
+<section class="sec" id="hands">
+  <div class="center" style="margin-bottom:clamp(32px,5vw,56px)"><span class="eb">The hands behind every piece</span><h2 class="dsp">What makes a textile worth <span class="sw">R</span>emembering?</h2></div>
+  <figure class="hands-card" style="margin-block:0"><canvas id="handsCv" width="640" height="638" role="img" aria-label="Six pencil drawings of hands at work, gently moving: passing a shuttle through a loom, drawing fibre through the fingers, teasing raw fibre apart, pulling thread from a cone, beating the weft, and folding finished cloth"></canvas><figcaption><span>The hands behind every piece</span><a href="https://www.instagram.com/p/Dbn_yvcCKN_/" target="_blank" rel="noopener">Original post</a></figcaption></figure>
+</section>
+
+<section class="sec band" id="crossword">
+  <div style="max-width:1320px;margin:0 auto clamp(28px,4vw,52px);display:grid;gap:14px"><span class="eb">From the feed</span><h2 class="dsp">The Shajra <span class="sw">C</span>rossword</h2><p style="max-width:52ch;color:var(--ink2)">Five words from the workshop. Every answer appears somewhere on this page.</p></div>
+  <div class="cross">
+    <div>
+      <div class="grid" id="grid"></div>
+      <div class="cbtns"><button class="bt" id="check" type="button">Check</button><button class="bt" id="reveal" type="button">Reveal answers</button><button class="bt" id="clear" type="button">Clear</button></div>
+      <p class="status" id="status" aria-live="polite" style="margin-top:16px"></p>
+    </div>
+    <div class="clues"><div><h3>Across</h3><ol id="across"></ol></div><div><h3>Down</h3><ol id="down"></ol></div></div>
+  </div>
+</section>
+
+<section class="sec" id="journal">
+  <div class="center"><span class="eb">Journal</span><h2 class="dsp">Notes from the <span class="sw">W</span>orkshop</h2></div>
+  <div class="jr" id="feed"></div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="ct">
+    <span class="eb w">Contact</span>
+    <h2 class="dsp">Let's begin a <span class="sw">C</span>onversation</h2>
+    <p>Orders and questions go through Instagram direct messages.</p>
+    <div class="handle"><code id="handle">@shajrabymaria</code><button class="bt on-dark" id="copy" type="button">Copy handle</button><a class="bt on-dark" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open Instagram</a></div>
+  </div>
+  <div class="cfoot"><img src="img/logo.jpg" alt="Shajra"><span>Natural fibres · Handcrafted · Made in Pakistan</span><span>Shajra by Maria</span></div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
