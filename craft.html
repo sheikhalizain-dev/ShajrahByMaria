@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Craft | Shajra by Maria</title>
+<meta name="description" content="Weave a swatch on the Shajra loom, watch cloth move, and play the workshop crossword.">
+<meta name="theme-color" content="#2b211b">
+<meta property="og:title" content="Craft | Shajra by Maria">
+<meta property="og:description" content="Weave a swatch on the Shajra loom, watch cloth move, and play the workshop crossword.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/pfp.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nb" href="index.html" aria-label="Shajra, home"><img src="img/logo.jpg" alt="Shajra"></a>
+  <nav class="nl" aria-label="Main"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html" aria-current="page">Craft</a><a href="journal.html">Journal</a></nav>
+  <a class="nc" href="contact.html">Contact</a>
+  <button class="nm" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
+<div class="menu" id="menu" hidden>
+  <button type="button" id="menuClose">Close</button>
+  <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html" aria-current="page">Craft</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a>
+</div>
+
+<main>
+<section class="dark phead">
+  <div class="ph-in"><span class="eb w">Craft</span><h1 class="dsp">Loom, cloth and play</h1><p>Try weaving a swatch, watch cloth sway on the line, and finish a crossword from the workshop.</p></div>
+</section>
+<section class="sec band" id="loom">
+  <div class="loom" style="margin-bottom:clamp(28px,4vw,52px);display:block"><div class="center" style="justify-items:start;text-align:left"><span class="eb">Try it</span><h2 class="dsp">Sit at the <span class="sw">L</span>oom</h2><p style="max-width:52ch;color:var(--ink2)">Pick a weave structure and two yarns. The warp runs top to bottom, the weft crosses it, and the order they pass over each other is the whole pattern.</p></div></div>
+  <div class="loom">
+    <div>
+      <div class="loom-frame"><canvas id="loomCanvas" role="img" aria-label="A woven swatch drawn from your chosen weave and yarns"></canvas></div>
+      <p class="loom-cap" id="loomCap" aria-live="polite"></p>
+    </div>
+    <div class="controls">
+      <div class="ctl"><span class="eb" id="lWeave">Weave</span><div class="seg" id="weaves" role="group" aria-labelledby="lWeave"></div></div>
+      <div class="ctl"><span class="eb" id="lWeft">Weft yarn</span><div class="yarns" id="weft" role="group" aria-labelledby="lWeft"></div></div>
+      <div class="ctl"><span class="eb" id="lWarp">Warp yarn</span><div class="yarns" id="warp" role="group" aria-labelledby="lWarp"></div></div>
+      <div><button class="bt" id="again" type="button">Weave it again</button></div>
+    </div>
+  </div>
+</section>
+<section class="dark sec" id="motion">
+  <div class="line-h"><span class="eb w">In motion</span><h2 class="dsp">Cloth on the <span class="sw">L</span>ine</h2></div>
+  <div class="line">
+    <canvas data-hang="img/p01.jpg" role="img" aria-label="Ribbed sand-coloured cloth hanging and swaying"></canvas>
+    <canvas data-hang="img/p04.jpg" role="img" aria-label="Diamond-patterned cloth hanging and swaying"></canvas>
+    <canvas data-hang="img/p03.jpg" role="img" aria-label="Plain-weave cloth hanging and swaying"></canvas>
+  </div>
+  <div class="reels" id="reels" hidden></div>
+  <div class="line-h"><a class="lk" style="width:min(300px,100%)" href="https://www.instagram.com/shajrabymaria/reels/" target="_blank" rel="noopener">Watch the reels <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a></div>
+</section>
+<section class="sec band" id="crossword">
+  <div style="max-width:1320px;margin:0 auto clamp(28px,4vw,52px);display:grid;gap:14px"><span class="eb">From the feed</span><h2 class="dsp">The Shajra <span class="sw">C</span>rossword</h2><p style="max-width:52ch;color:var(--ink2)">Five words from the workshop. Every answer is a word from the workshop.</p></div>
+  <div class="cross">
+    <div>
+      <div class="grid" id="grid"></div>
+      <div class="cbtns"><button class="bt" id="check" type="button">Check</button><button class="bt" id="reveal" type="button">Reveal answers</button><button class="bt" id="clear" type="button">Clear</button></div>
+      <p class="status" id="status" aria-live="polite" style="margin-top:16px"></p>
+    </div>
+    <div class="clues"><div><h3>Across</h3><ol id="across"></ol></div><div><h3>Down</h3><ol id="down"></ol></div></div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="ct">
+    <span class="eb w">Contact</span>
+    <h2 class="dsp">Let's begin a Conversation</h2>
+    <p>Orders and questions go through Instagram direct messages.</p>
+    <div class="handle"><a class="bt on-dark" href="contact.html">How to order</a><a class="bt on-dark" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open Instagram</a></div>
+  </div>
+  <div class="cfoot"><img src="img/logo.jpg" alt="Shajra"><nav class="flinks" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav><span>Natural fibres · Handcrafted · Made in Pakistan</span><span>Shajra by Maria</span></div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/loom.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/crossword.js"></script>
+
+</body>
+</html>

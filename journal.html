@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Journal | Shajra by Maria</title>
+<meta name="description" content="Launch teasers and posts from the Shajra workshop.">
+<meta name="theme-color" content="#2b211b">
+<meta property="og:title" content="Journal | Shajra by Maria">
+<meta property="og:description" content="Launch teasers and posts from the Shajra workshop.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/pfp.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="nb" href="index.html" aria-label="Shajra, home"><img src="img/logo.jpg" alt="Shajra"></a>
+  <nav class="nl" aria-label="Main"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html" aria-current="page">Journal</a></nav>
+  <a class="nc" href="contact.html">Contact</a>
+  <button class="nm" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</header>
+<div class="menu" id="menu" hidden>
+  <button type="button" id="menuClose">Close</button>
+  <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html" aria-current="page">Journal</a><a href="contact.html">Contact</a>
+</div>
+
+<main>
+<section class="dark phead">
+  <div class="ph-in"><span class="eb w">Journal</span><h1 class="dsp">Notes from the Workshop</h1><p>Teasers and posts from the road to launch.</p></div>
+</section>
+<section class="sec" id="soon">
+  <div class="ps-wrap">
+    <div class="center"><span class="eb">Launching soon</span><h2 class="dsp">Shajra is almost <span class="sw">H</span>ere</h2></div>
+    <div class="ps">
+      <div class="ps-img"><img id="psImg" alt=""></div>
+      <div class="ps-r">
+        <div class="meta"><span id="psDate"></span><span id="psN"></span></div>
+        <div class="mid">
+          <div class="t"><h3 id="psT"></h3><p id="psP"></p></div>
+          <div class="nx"><div class="im"><img id="psNx" alt=""></div><span id="psNc"></span></div>
+        </div>
+        <div class="psb">
+          <a class="lk" id="psLink" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open on Instagram <svg viewBox="0 0 18 10" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 5h17M13 1l4 4-4 4"/></svg></a>
+          <div class="arrows"><button class="cir" id="psPrev" type="button" aria-label="Earlier teaser"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 6H1M5 1L1 6l4 5"/></svg></button><button class="cir" id="psNext" type="button" aria-label="Later teaser"><svg viewBox="0 0 20 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 6h19M15 1l4 5-4 5"/></svg></button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec" id="journal">
+  <div class="center"><span class="eb">From the feed</span><h2 class="dsp">Latest posts</h2></div>
+  <div class="jr" id="feed"></div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="ct">
+    <span class="eb w">Contact</span>
+    <h2 class="dsp">Let's begin a Conversation</h2>
+    <p>Orders and questions go through Instagram direct messages.</p>
+    <div class="handle"><a class="bt on-dark" href="contact.html">How to order</a><a class="bt on-dark" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open Instagram</a></div>
+  </div>
+  <div class="cfoot"><img src="img/logo.jpg" alt="Shajra"><nav class="flinks" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav><span>Natural fibres · Handcrafted · Made in Pakistan</span><span>Shajra by Maria</span></div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/teasers.js"></script>
+<script src="js/journal.js"></script>
+
+</body>
+</html>
