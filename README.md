@@ -9,7 +9,6 @@ Multi-page static website (HTML, CSS, JavaScript). No build step.
 | Product pages | `products/<name>.html` (aaks, baft, rivayaat, naqsh, chilman, bisaat, kargha) |
 | About | `about.html` |
 | Craft (loom, cloth, crossword) | `craft.html` |
-| Journal | `journal.html` |
 | Contact / how to order | `contact.html` |
 
 - `css/style.css` styles for every page
