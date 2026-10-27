@@ -18,8 +18,11 @@
 <header class="nav" id="nav">
   <a class="nb" href="index.html" aria-label="Shajra, home"><img src="img/logo.jpg" alt="Shajra"></a>
   <nav class="nl" aria-label="Main"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html" aria-current="page">Journal</a></nav>
-  <a class="nc" href="contact.html">Contact</a>
-  <button class="nm" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  <div class="nr">
+    <a class="nc" href="contact.html">Contact</a>
+    <button class="cartb" type="button" data-cart-open aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 10.2a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="17" cy="19.5" r="1.2"/></svg><b class="cartn" data-cart-count hidden>0</b></button>
+    <button class="nm" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
 </header>
 <div class="menu" id="menu" hidden>
   <button type="button" id="menuClose">Close</button>
@@ -59,13 +62,14 @@
   <div class="ct">
     <span class="eb w">Contact</span>
     <h2 class="dsp">Let's begin a Conversation</h2>
-    <p>Orders and questions go through Instagram direct messages.</p>
-    <div class="handle"><a class="bt on-dark" href="contact.html">How to order</a><a class="bt on-dark" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener">Open Instagram</a></div>
+    <p>Orders and questions go through WhatsApp or Instagram messages.</p>
+    <div class="handle"><a class="bt on-dark" href="contact.html">How to order</a><a class="bt on-dark" href="https://wa.me/923144778804" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9.2 8.3c-.3 1.9 2.7 6 6.4 6.4l1.3-1.5-2.2-1-1 .8c-1.2-.5-2.2-1.5-2.7-2.7l.8-1-1-2.2-1.6 1.2z"/></svg>WhatsApp</a><a class="bt on-dark" href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>Open Instagram</a></div>
   </div>
-  <div class="cfoot"><img src="img/logo.jpg" alt="Shajra"><nav class="flinks" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav><span>Natural fibres · Handcrafted · Made in Pakistan</span><span>Shajra by Maria</span></div>
+  <div class="cfoot"><img src="img/logo.jpg" alt="Shajra"><nav class="flinks" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="craft.html">Craft</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav><div class="social"><a href="https://www.instagram.com/shajrabymaria/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a><a href="https://wa.me/923144778804" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/><path d="M9.2 8.3c-.3 1.9 2.7 6 6.4 6.4l1.3-1.5-2.2-1-1 .8c-1.2-.5-2.2-1.5-2.7-2.7l.8-1-1-2.2-1.6 1.2z"/></svg></a></div><span>Natural fibres · Handcrafted · Made in Pakistan</span><span>Shajra by Maria</span></div>
 </footer>
 
 <script src="js/common.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/teasers.js"></script>
 <script src="js/journal.js"></script>
 

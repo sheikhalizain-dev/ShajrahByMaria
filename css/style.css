@@ -274,3 +274,75 @@ h2.dsp{font-size:clamp(2.3rem,5.6vw,4.9rem)}
 .steps h3{font:400 clamp(1.4rem,2.2vw,1.9rem)/1.1 var(--serif);font-variation-settings:"opsz" 22;text-transform:uppercase}
 .steps p{color:var(--ink2);max-width:36ch}
 @media (max-width:820px){.steps{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- shop: toolbar, cards, list view ---------- */
+.nr{justify-self:end;display:flex;align-items:center;gap:20px}
+.nc{justify-self:auto}
+.cartb{position:relative;background:none;border:0;color:#fff;cursor:pointer;padding:6px;display:grid;place-items:center}
+.cartb svg{width:24px;height:24px}
+.cartn{position:absolute;top:-2px;right:-4px;min-width:17px;height:17px;border-radius:9px;background:var(--gold);color:var(--ink);font:600 .64rem/17px var(--sans);text-align:center;padding:0 4px}
+.toolbar{display:flex;align-items:center;gap:clamp(14px,3vw,32px);flex-wrap:wrap}
+.tbtn{display:inline-flex;align-items:center;gap:10px;background:none;border:0;padding:6px 0;font:600 .95rem/1 var(--sans);color:var(--ink);cursor:pointer;position:relative}
+.tbtn svg{width:24px;height:24px}
+.sortl select{appearance:none;-webkit-appearance:none;background:none;border:0;font:inherit;color:inherit;cursor:pointer;padding:0 4px 0 0}
+.views{margin-left:auto;display:flex;gap:6px}
+.views button{width:44px;height:44px;border:0;background:none;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.views button[aria-pressed=true]{background:rgba(42,26,18,.1)}
+.views svg{width:24px;height:24px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:9px 16px;font:500 .8rem/1 var(--sans);cursor:pointer;color:var(--ink)}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pcard{display:grid;gap:12px;align-content:start}
+.pclink{display:grid;gap:12px;text-decoration:none;color:inherit;align-content:start}
+.pcard:hover .pcimg .alt{opacity:0}
+.pcard:hover .pcimg img{transform:none}
+.pclink:hover .pcimg .alt,.pclink:focus-visible .pcimg .alt{opacity:1}
+.pclink:hover .pcimg img{transform:scale(1.04)}
+.addbtn{width:100%;border:1.5px solid var(--ink);border-radius:99px;background:none;color:var(--ink);padding:14px 10px;font:600 .8rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.addbtn:hover,.addbtn.done{background:var(--ink);color:#fff}
+.bt.solid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bt.solid:hover{background:var(--mocha);border-color:var(--mocha)}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}
+.pgrid.list{grid-template-columns:minmax(0,1fr)}
+.pgrid.list .pcard{grid-template-columns:minmax(110px,160px) minmax(0,1fr);gap:8px 20px;align-items:center}
+.pgrid.list .pclink{display:contents}
+.pgrid.list .pcimg{grid-row:1/3;grid-column:1}
+.pgrid.list .pcinfo{grid-column:2;grid-row:1;align-self:end}
+.pgrid.list .addbtn{grid-column:2;grid-row:2;width:auto;justify-self:start;align-self:start;padding-inline:26px}
+@media (max-width:700px){
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}
+  .pgrid.list{grid-template-columns:minmax(0,1fr)}
+  .pcinfo h3{font-size:1.15rem}
+  .pct{font-size:.8rem}
+  .addbtn{padding:12px 6px;font-size:.72rem}
+  .nr{gap:12px}
+}
+/* ---------- cart drawer ---------- */
+.cscrim{position:fixed;inset:0;z-index:60;background:rgba(20,12,8,.5)}
+.cdrawer{position:fixed;top:0;right:0;bottom:0;z-index:61;width:min(440px,100%);background:var(--paper);display:flex;flex-direction:column;box-shadow:-20px 0 50px -20px rgba(0,0,0,.4);animation:slidein .3s ease both}
+@keyframes slidein{from{transform:translateX(40px)}}
+.chead{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.chead h2{font:400 1.7rem/1 var(--serif);font-variation-settings:"opsz" 22;text-transform:uppercase}
+.chead button{background:none;border:0;font:500 .74rem/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.clines{flex:1;overflow:auto;padding:8px 22px}
+.cempty{padding:36px 0;color:var(--ink2)}
+.cline{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.cline img{width:76px;height:96px;object-fit:cover}
+.cline b{font:400 1.15rem/1.1 var(--serif);text-transform:uppercase;display:block}
+.cline span{display:block;font-size:.82rem;color:var(--ink2)}
+.cline .lt{font-weight:500;color:var(--ink);font-size:.9rem;white-space:nowrap}
+.qty{display:flex;align-items:center;gap:8px;margin-top:10px}
+.qty button{width:30px;height:30px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:1rem;line-height:1;color:var(--ink)}
+.qty output{min-width:22px;text-align:center}
+.qty .rm{width:auto;border:0;background:none;text-decoration:underline;font-size:.78rem;color:var(--ink2);margin-left:6px}
+.cfoot2{padding:18px 22px 24px;border-top:1px solid var(--line);display:grid;gap:12px}
+.ctot{display:flex;justify-content:space-between;font-size:1.05rem}
+.cnote{font-size:.8rem;color:var(--ink2)}
+
+/* ---------- social icons (single colour, follow the text colour) ---------- */
+.ico{width:18px;height:18px;flex:none}
+.bt .ico{width:18px;height:18px;margin-right:2px}
+.social{display:flex;gap:14px;align-items:center}
+.social a{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(255,255,255,.35);border-radius:50%;color:rgba(255,255,255,.8);transition:background .2s,color .2s}
+.social a:hover{background:#fff;color:var(--mocha-d)}
+.social .ico{width:18px;height:18px}
